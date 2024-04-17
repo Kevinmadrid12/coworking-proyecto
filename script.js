@@ -1,17 +1,17 @@
 $(document).ready(function() {
-    cargarTabla();
+    cargarTarjetas();
     $("#search").on("input", function() {
         var searchValue = $(this).val().trim();
         if (searchValue !== "") {
             buscar(searchValue);
         } else {
-            cargarTabla();
+            cargarTarjetas();
         }
     });
 
     function buscar(searchValue) {
         $.ajax({
-            url: "../controller/buscador.php",
+            url: "buscador.php",
             type: "GET",
             data: {
                 search: searchValue
@@ -20,20 +20,20 @@ $(document).ready(function() {
                 if (response.trim() === "") {
                     alert("No se encontraron resultados.");
                 }
-                $("#dataTable tbody").html(response);
+                $("#cardContainer").html(response);
             }
         });
     }
 
-    function cargarTabla() {
+    function cargarTarjetas() {
         $.ajax({
-            url: "../controller/buscador.php",
+            url: "buscador.php",
             type: "GET",
             data: {
                 search: ""
             },
             success: function(response) {
-                $("#dataTable tbody").html(response);
+                $("#cardContainer").html(response);
             }
         });
     }
