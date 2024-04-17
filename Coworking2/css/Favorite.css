@@ -1,0 +1,47 @@
+.card {
+    display: flex;
+    flex-direction: auto;
+    align-items: auto;
+    justify-content: space-between;
+    margin-bottom: 200px; 
+    padding: 10px;
+} 
+
+.card-body {
+    margin-top: 10px;
+    padding-right: 200px;
+    text-align: center;
+    display: flex; 
+}
+
+/* Customize the search bar's appearance */
+.input-group {
+    margin-bottom: 20px;
+  }
+  
+  .input-group-append {
+    background-color: #007bff; /* Green background color */
+    border-color: #007bff; /* Green border color */
+  }
+  
+  .btn-outline-success {
+    color: #fff; /* White text color */
+    border-color: #007bff; /* Green border color */
+    background-color: #007bff; /* Green background color on hover */
+  }
+  
+  .align-top-right {
+    position: relative; /* Make the element positionable */
+  }
+  
+  .align-top-right img {
+    position: absolute; /* Make the image positionable within the anchor tag */
+    top: 0; /* Align to the top */
+    right: 0; /* Align to the right */
+  }
+  
+
+
+
+
+

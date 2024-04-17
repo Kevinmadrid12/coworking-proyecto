@@ -1,0 +1,16 @@
+.card-body {
+    height: auto; /* Puedes ajustar esta altura según tus necesidades */
+    width: max-content;
+    margin: auto;
+    /*padding: 100px;*/
+    overflow-y: scroll;
+    border: 2px solid #87A922; /* Agrega un borde azul de 2px */
+   
+}
+
+.card-title{
+    color: black;
+    margin-bottom: 0; /* Eliminar el margen inferior del título */
+}
+
+
