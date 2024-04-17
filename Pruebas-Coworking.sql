@@ -159,7 +159,7 @@ USE Pruebas;
 INSERT INTO availability (available_desks, Available_meeting_rooms) VALUES ("15", "4");
 
 -- Insertar datos en la tabla dateSpace
-INSERT INTO date_space (effective_date, end_date) VALUES ("2024-02-25 12:20:00", "2024-03-15 18:20:00");
+INSERT INTO date_space (effective_date, end_date) VALUES ("2024-02-25", "2024-03-15");
 
 -- Insertar datos en la tabla location
 INSERT INTO location (name_location, address, city, postal_code) VALUES ("Conexion", "Calle de oro", "soyapango", "554");
@@ -170,13 +170,13 @@ INSERT INTO location (nameLocation, address, city, postalCode) VALUES ("Union Co
 INSERT INTO date_rol (creation_date, last_modified_date) VALUES ("2024-03-20", "2024-04-02");
 
 -- Insertar datos en la tabla equipment
-INSERT INTO equipment (equipment_name, description, quantity, availability) VALUES ("Computadoras", "Son computadoras muy buenas", "15", "6");
+INSERT INTO equipmment (name_equipmment, description, quantity, availability) VALUES ("Computadoras", "Son computadoras muy buenas", "15", "6");
 
 -- Insertar datos en la tabla Rol
-INSERT INTO Rol (role_name, descripcion, permisions, date_rol_id) VALUES ("Administrador", "Usuario que puede modificar diferentes campos", "todas", 1);
+INSERT INTO rol (role_name, descripcion, permisions, manage_rol_id, date_rol_id) VALUES ("Administrador", "Usuario que puede modificar diferentes campos", "todas", 1, 1);
 
 -- Insertar datos en la tabla usuario
-INSERT INTO usuario (first_name, last_name, contraseña, email, register_date, estado ,rol_id) VALUES ("Juan", "Perez", "1234", "juan123@gmail.com", "2024-01-12", "Activo", 1);
+INSERT INTO usuario (first_name, last_name, password, email, register_date, estado ,rol_id, comment_id) VALUES ("Juan", "Perez", "1234", "juan123@gmail.com", "2024-01-12", "Activo", 1, 1);
 
 -- Insertar datos en la tabla datereservation
 INSERT INTO date_reservation (date_start, date_end) VALUES ("2024-02-06 12:20:00", "2024-03-08 14:30:00");
